@@ -20,19 +20,21 @@ Agents handle greetings, farewells, current weather, and forecasts, while sessio
 
 ```
 
-weather-app/ 
-├── agents.py # Defines agents and root orchestration 
-├── tools.py # Weather, forecast, greeting, farewell tools 
-├── session.py # SessionManager abstraction 
-├── runner.py # Async runner utilities 
-├── config.py # Secrets and app constants 
-├── main.py # Demo entry point 
-├── tests/ # Unit tests with mocks 
-│ ├── test_tools.py 
-│ ├── test_agents.py 
-│ ├── test_session.py 
-│ └── conftest.py 
-└── .github/workflows/tests.yml # CI pipeline
+stateful-weather-agents/
+├── weather_app/
+│   ├── __init__.py
+│   ├── agents.py
+│   ├── tools.py
+│   ├── session.py
+│   ├── runner.py
+│   ├── config.py
+│   └── main.py
+├── tests/
+│   ├── test_agents.py
+│   ├── test_tools.py
+│   ├── test_session.py
+│   └── conftest.py
+└── .github/workflows/tests.yml
 
 ```
 ---

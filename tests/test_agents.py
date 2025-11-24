@@ -1,4 +1,7 @@
-from agents import greeting_agent, farewell_agent, forecast_agent, root_agent_stateful
+from weather_app.agents import greeting_agent, farewell_agent, forecast_agent, root_agent_stateful
+from weather_app.session import SessionManager
+from weather_app.tools import say_hello
+
 
 def test_agents_exist():
     assert greeting_agent.name == "greeting_agent"

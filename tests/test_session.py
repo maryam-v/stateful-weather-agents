@@ -1,6 +1,6 @@
 import pytest
 import asyncio
-from session import SessionManager
+from weather_app.session import SessionManager
 
 APP_NAME = "test_app"
 USER_ID = "test_user"
