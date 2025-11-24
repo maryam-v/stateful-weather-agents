@@ -48,21 +48,21 @@ cd weather-app
 
 2. **Create a virtual environment**
 ```bash
-   python -m venv .venv
-   source .venv/bin/activate   # Mac/Linux
-   .venv\Scripts\activate      # Windows
+python -m venv .venv
+source .venv/bin/activate   # Mac/Linux
+.venv\Scripts\activate      # Windows
 ```
 3. **Install dependencies**
 
 ```bash
-   pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 4.**Create .env file**
 
 ```env
-   OPENWEATHER_API_KEY=your_openweather_key_here
-   GOOGLE_API_KEY=your_google_api_key_here
+OPENWEATHER_API_KEY=your_openweather_key_here
+GOOGLE_API_KEY=your_google_api_key_here
 ```
 
 ---
@@ -72,7 +72,7 @@ cd weather-app
 Run the demo:
 
 ```bash
-   python main.py
+python main.py
 ```
 Example Output:
 
@@ -105,7 +105,7 @@ test tests/
 With coverage:
 
 ```bash
-   pytest --cov=.
+pytest --cov=.
 ```
 
 ---
@@ -116,13 +116,13 @@ With coverage:
 
 **Root Agent** delegates to sub‑agents:
 
-   Greeting Agent
+1. **Greeting Agent**
 
-   Farewell Agent
+2. **Farewell Agent**
 
-   Forecast Agent
+3. **Forecast Agent**
 
-   Weather Agent
+4. **Weather Agent**
 
 ---
 
