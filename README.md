@@ -38,34 +38,32 @@ weather-app/
 ---
 
 
----
-
 ## ⚙️ Setup
 
 1. **Clone the repo**
-   ```bash
-   git clone https://github.com/yourusername/weather-app.git
-   cd weather-app
-   ```
+```bash
+git clone https://github.com/yourusername/weather-app.git
+cd weather-app
+```
 
 2. **Create a virtual environment**
-   ```bash
-    python -m venv .venv
-    source .venv/bin/activate   # Mac/Linux
-    .venv\Scripts\activate      # Windows
-   ```
+```bash
+   python -m venv .venv
+   source .venv/bin/activate   # Mac/Linux
+   .venv\Scripts\activate      # Windows
+```
 3. **Install dependencies**
 
-   ```bash
-    pip install -r requirements.txt
-   ```
+```bash
+   pip install -r requirements.txt
+```
 
 4.**Create .env file**
 
-   ```env
-    OPENWEATHER_API_KEY=your_openweather_key_here
-    GOOGLE_API_KEY=your_google_api_key_here
-   ```
+```env
+   OPENWEATHER_API_KEY=your_openweather_key_here
+   GOOGLE_API_KEY=your_google_api_key_here
+```
 
 ---
 
@@ -73,10 +71,12 @@ weather-app/
 
 Run the demo:
 
-   ```bash
-    python main.py
+```bash
+   python main.py
+```
+Example Output:
 
-
+```
 INFO: SessionManager initialized for app 'weather_app'
 INFO: Session 'session_demo' created for user 'user_demo'
 INFO: Agent response: The weather in London is Overcast clouds with a temperature of 7°C.
@@ -98,15 +98,15 @@ last_forecast_report: 3-day forecast for Tokyo: Broken clouds, 11°C; Clear sky,
 
 Run all tests:
 
-   ```bash
-   test tests/
-   ```
+```bash
+test tests/
+```
 
 With coverage:
 
-   ```bash
-    pytest --cov=.
-   ```
+```bash
+   pytest --cov=.
+```
 
 ---
 
@@ -116,13 +116,13 @@ With coverage:
 
 **Root Agent** delegates to sub‑agents:
 
-        Greeting Agent
+   Greeting Agent
 
-        Farewell Agent
+   Farewell Agent
 
-        Forecast Agent
+   Forecast Agent
 
-        Weather Agent
+   Weather Agent
 
 ---
 
