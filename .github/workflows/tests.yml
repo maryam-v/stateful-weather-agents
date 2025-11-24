@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     strategy:
+      fail-fast: false
       matrix:
         python-version: ["3.9", "3.10", "3.11"]
 
@@ -29,12 +30,16 @@ jobs:
           pip install -r requirements.txt
           pip install pytest pytest-asyncio pytest-cov
 
+      - name: Install package
+        run: |
+          pip install -e .
+
       - name: Run tests with coverage
         run: |
-          pytest --cov=.
+          pytest --cov=weather_app --cov-report=term-missing
 
       - name: Upload coverage report
         uses: actions/upload-artifact@v4
         with:
           name: coverage-report
-          path: ./.coverage
+          path: .coverage
