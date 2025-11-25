@@ -51,3 +51,4 @@ class SessionManager:
         """Return the current state dict for a session."""
         session = await self.get_session(user_id, session_id)
         return session.state if session else {}
+

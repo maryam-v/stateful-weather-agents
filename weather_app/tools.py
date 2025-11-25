@@ -3,7 +3,7 @@ import requests
 import logging
 from typing import Optional
 from google.adk.tools.tool_context import ToolContext
-from config import OPENWEATHER_API_KEY
+from weather_app.config import OPENWEATHER_API_KEY
 
 logger = logging.getLogger(__name__)
 
