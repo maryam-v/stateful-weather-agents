@@ -34,7 +34,10 @@ stateful-weather-agents/
 │   ├── test_tools.py
 │   ├── test_session.py
 │   └── conftest.py
-└── .github/workflows/tests.yml
+├── pyproject.toml
+└── .github/
+    └── workflows/
+        └── tests.yml
 
 ```
 ---
